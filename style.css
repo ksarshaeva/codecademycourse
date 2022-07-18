@@ -1,28 +1,62 @@
 body, html {
-    font-family: 'Ibarra Real Nova';
+    font-family: 'Abril Fatface';
+    box-sizing: border-box;
     width: 100%;
+    margin: 0;
+    text-align: center;
 }
 
-header img {
-    width: 70%;
-    border-radius: 50%;
+li, 
+a, 
+button {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
 }
 
-nav {
-    font-size: 1.5rem;
-    border: 1px solid black;
-    background-color: lightgray;
+nav, 
+header,
+div.outer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;  
+}
+.educations,
+.skills,
+.contact {
+    border-top: solid 2px gray;
 }
 
 li {
-    border: 1px solid black;
+    display: inline-block;
+    padding: 0px 20px;
 }
 
-ul {
-    list-style: none;
+li a:hover {
+    color: blue;
 }
 
-header, section.education {
-    display: flex;
-    justify-content: space-between;
+button  {
+    padding: 9px 25px;
+    background-color: rgba(11, 147, 185, 0.594);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+header img {
+    width: 40%;
+    border-radius: 50%;
+}
+
+header h1, img {
+    padding: 15px 25px;
+    margin: 30px;
+}
+
+.educations img {
+    height: 100px;
 }

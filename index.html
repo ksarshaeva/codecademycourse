@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav>
-        <span>Kamila</span>
-
+        <h2>Kamila</h2>
         <ul>
-            <li>Home</li>
-            <li>Education</li>
-            <li>Skills</li>
-            <li>Contact</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#educations">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
         </ul>
 
+        <a href="#" class="cta"><button>Contact</button></a>
     </nav>
 
     <header>
@@ -31,31 +31,45 @@
         <img src="./media/me.jpg" alt="photo of me">
     </header>
 
-    <main>
+    <section id="educations" class="educations">
+        <h2>Education</h2>
 
-        <section class="education">
-            <h3>Education</h3>
-
-            <div class="education">
+        <div class="outer">
+            <div class="degree">
                 <img src="./media/uni.jpg" alt="university logo">
+                <h2>Bachelor's Degree</h2>
+                <h2>Mathematical and Computer Modeling</h2>
             </div>
 
-            <div class="certifications">
-                
+            <div class="certification">
+                <img src="./media/codecademy.svg" alt="codecademy logo">
             </div>
-        </section>
-
-        <section class="skills">
-            <h3>Skills</h3>
-
-        </section>
-
-        <footer>
+        </div>
+    </section>
 
 
-        </footer>
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
 
-    </main>
+        <div class="outer">
+            <i class="fa-brands fa-html5 fa-2x"></i>
+            <i class="fa-brands fa-css3 fa-2x"></i>
+            <i class="fa-brands fa-js fa-2x"></i>
+            <i class="fa-brands fa-python fa-2x"></i>
+            <i class="fa-brands fa-php fa-2x"></i>
+            <i class="fa-brands fa-git fa-2x"></i>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact</h2>
+        <div class="outer">
+            <i class="fa-solid fa-envelope">sarshaevak@gmail.com</i>
+            <i class="fa-brands fa-github">ksarshaeva</i>
+            <i class="fa-solid fa-phone-flip">8-702-459-98-29</i>
+        </div>
+    </section>
+
     
 </body>
 </html>
